@@ -30,6 +30,7 @@ const onFormSubmit = event => {
   const message = formElements.message.value;
   resetStorageData();
   refs.formRef.reset();
+  formData.setData({ email: '', message: '' });
 
   console.log({ email, message });
 };
